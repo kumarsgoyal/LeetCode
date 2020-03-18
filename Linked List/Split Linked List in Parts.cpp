@@ -32,6 +32,9 @@ public:
                     currlen--;
                 }
 
+                // [0,1,2,3,4]
+                // k = 3
+                // OUTPUT: [[0,1],[2,3],[4]]
                 if(extra){
                     temp = temp->next;
                     extra--;
@@ -42,6 +45,8 @@ public:
             }
         }
         else {
+            // root = [1, 2, 3], k = 5
+            // Output: [[1],[2],[3],[],[]]
             while(root && k) {
                 ListNode *temp = root->next;
                 root->next = NULL;
