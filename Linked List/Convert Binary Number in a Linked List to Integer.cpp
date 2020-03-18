@@ -18,11 +18,11 @@ public:
             head = next;
         }
         
-        int flag = 0;
+        int power = 0;
         double sum = 0;
         while(prev) {
-            sum += (prev->val * pow(2, flag));
-            ++flag;
+            sum += (prev->val * pow(2, power));
+            ++power;
             prev = prev->next;
         }
         return (int)sum;
